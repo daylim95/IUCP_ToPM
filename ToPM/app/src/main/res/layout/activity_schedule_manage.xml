@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivities.ScheduleManageActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="상영 스케줄 입력"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/prevBtn"
+            android:text="◀"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="prevBtnClick"/>
+
+        <TextView
+            android:text="날짜"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:text="▶"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="nextBtnClick"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/dayScheduleList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:padding="5dp">
+    </ListView>
+
+    <Spinner
+        android:id="@+id/movieSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Spinner>
+
+    <Button
+        android:id="@+id/screenBtn"
+        android:text="상영관 선택"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="selectScreenClick"/>
+
+    <Button
+        android:id="@+id/dateBtn"
+        android:text="날짜 선택"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="inputDateClick"/>
+
+    <Button
+        android:id="@+id/timeBtn"
+        android:text="시작 시간 입력"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="inputStartTimeClick"/>
+
+    <Button
+        android:text="완료"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="scheduleCompleteClick"/>
+
+
+</LinearLayout>

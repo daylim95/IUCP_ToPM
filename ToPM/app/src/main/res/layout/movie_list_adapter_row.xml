@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/movielistTextview"
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:layout_height="50dp"
+        android:text="Title"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="50dp"
+        android:text="삭제"/>
+
+</LinearLayout>
